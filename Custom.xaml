@@ -1,0 +1,658 @@
+﻿<local:MyHint Margin="0,8,0,2" Theme="Blue"
+                    Text="欢迎使用快捷主页！&#xA;（Welcome to use Quick Homepage）" />
+
+<local:MyHint Text="时间报道：你在 {date} {time} 打开（刷新）该主页&#xA;Time Report: You opened (refreshed) this homepage on {date} at {time}" />
+
+<local:MyHint Margin="0,8,0,2" Theme="Yellow"
+                    Text="你知道吗（Do you know）：{hint}&#xA;每日回声洞（Daily Echo Cave）：{cave}" />
+
+<local:MyCard Title="您的PCL信息（Your PCL information）" Margin="0,0,0,15" CanSwap="True" IsSwapped="False">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="12" Foreground="#BF6B5A"
+                    Text="当前PCL版本：{pcl_version}.{pcl_version_code}" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="12" Foreground="#BFB11D"
+                    Text="当前PCL版本分支：{pcl_version_branch}" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="12" Foreground="#48BF18"
+                    Text="当前PCL分支名：{pcl_branch}&#xA;（官方版为 Official，开源版为 OpenSource，社区版本可能有其他值）" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="12" Foreground="#14BFB0"
+                    Text="您的PCL识别码：{identify}" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="12" Foreground="#132ABF"
+                    Text="您的PCL程序路径：{path_with_name}" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="12" Foreground="#AE0FBF"
+                    Text="当前PCL所使用的缓存文件夹路径：{path_temp}" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="快捷打开网页（Quickly open web pages）" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://www.baidu.com/favicon.ico" Title="百度" Info="百度一下，你就知道！"
+                    EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable" />
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://www.douyin.com/favicon.ico" Title="抖音" Info="记录美好生活"
+                    EventType="打开网页" EventData="https://www.douyin.com/" Type="Clickable" />
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://www.bilibili.com/favicon.ico" Title="B站" Info="干杯！"
+                    EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable" />
+        <local:MyListItem  Margin="-5,2,-5,8" Logo="https://www.mcbbs.co/data/attachment/forum/202412/06/214555vffhtiui1afckkdk.webp" Title="littleskin" Info="快速、可靠的 Minecraft 皮肤站"
+                    EventType="打开网页" EventData="https://littleskin.cn/?lang=zh_CN" Type="Clickable" />
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://afdian.com/favicon.ico" Title="爱发电" Info="连接创作者与粉丝的赞助平台，为爱发电！"
+                    EventType="打开网页" EventData="https://afdian.com/" Type="Clickable" />
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="pack://application:,,,/images/Blocks/Grass.png" Title="Minecraft统一通行证" Info="一个账号通行所有服务器！"
+                    EventType="打开网页" EventData="https://login.mc-user.com:233/" Type="Clickable" />
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://panel.chmlfrp.net/favicon.ico" Title="内网穿透" Info="最好用的内网穿透！"
+                    EventType="打开网页" EventData="https://panel.chmlfrp.net/" Type="Clickable" />
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://www.iqiyi.com/favicon.ico" Title="爱奇艺" Info="iQIYI-热门独播剧集在线观看"
+                    EventType="打开网页" EventData="https://www.iqiyi.com/" Type="Clickable" />
+        <local:MyListItem  Margin="-5,2,-5,8"
+                    Logo="https://www.csdn.net/favicon.ico" Title="CSDN博客" Info="专业开发者社区"
+                    EventType="打开网页" EventData="https://www.csdn.net/" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="快捷启动游戏（Quick Launch Game）" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="13" Foreground="#48BF18"
+                    Text="草方块图标为正式版" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="13" Foreground="#BFB11D"
+                    Text="金块图标为愚人节版" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,4" FontSize="13" Foreground="#95968D"
+                    Text="圆石图标为远古版" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="26.2" Info="最低Java要求：Java 25" EventType="启动游戏" EventData="26.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="26.1.2" Info="最低Java要求：Java 25" EventType="启动游戏" EventData="26.1.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="26.1.1" Info="最低Java要求：Java 25" EventType="启动游戏" EventData="26.1.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="26.1" Info="最低Java要求：Java 25" EventType="启动游戏" EventData="26.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.11" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.11" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.10" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.10" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.9" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.9" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.8" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.8" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.7" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.7" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.6" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.5" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.4" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.3" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.2" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21.1" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.21" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.21" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.20.6" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.20.6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.20.5" Info="最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="1.20.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.20.4" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.20.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.20.3" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.20.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.20.2" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.20.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.20.1" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.20.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.20" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.20" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.19.4" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.19.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.19.3" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.19.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.19.2" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.19.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.19.1" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.19.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.19" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.19" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.18.2" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.18.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.18.1" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.18.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.18" Info="最低Java要求：Java 17" EventType="启动游戏" EventData="1.18" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.17.1" Info="最低Java要求：Java 16" EventType="启动游戏" EventData="1.17.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.17" Info="最低Java要求：Java 16" EventType="启动游戏" EventData="1.17" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.16.5" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.16.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.16.4" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.16.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.16.3" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.16.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.16.2" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.16.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.16.1" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.16.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.16" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.16" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.15.2" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.15.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.15.1" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.15.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.15" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.15" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.14.4" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.14.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.14.3" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.14.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.14.2" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.14.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.14.1" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.14.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.14" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.14" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.13.2" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.13.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.13.1" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.13.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.13" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.13" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.12.2" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.12.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.12.1" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.12.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.12" Info="最低Java要求：Java 8" EventType="启动游戏" EventData="1.12" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.11.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.11.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.11.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.11.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.11" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.11" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.10.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.10.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.10.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.10.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.10" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.10" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.9.4" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.9.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.9.3" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.9.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.9.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.9.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.9.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.9.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.9" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.9" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8.9" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8.9" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8.8" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8.8" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8.7" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8.7" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8.6" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8.6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8.5" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8.4" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8.3" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.8" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.8" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.10" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.10" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.9" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.9" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.8" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.8" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.7" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.7" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.6" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.5" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.4" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.3" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.7" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.7" Type="Clickable" />        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.6.4" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.6.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.6.3" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.6.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.6.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.6.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.6.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.6.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.6" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.5.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.5.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.5.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.5.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.5" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.4.7" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.4.7" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.4.6" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.4.6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.4.5" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.4.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.4.4" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.4.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.4.3" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.4.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.4.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.4.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.4.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.4.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.4" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.3.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.3.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.3.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.3.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.3" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.2.5" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.2.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.2.4" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.2.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.2.3" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.2.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.2.2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.2.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.2.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.2.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.1" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Grass.png"
+            Title="1.0" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.0" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="1.0.0-rc2-2" Info="最低Java要求：Java 6" EventType="启动游戏" EventData="1.0.0-rc2-2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.9-pre6" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.9-pre6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.9-pre1" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.9-pre1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.8.1" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.8.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.8" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.8" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.7.3" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.7.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.7.2" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.7.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.7" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.7" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.6.6" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.6.6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.6.5" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.6.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.6.4" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.6.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.6.3" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.6.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.6.2" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.6.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.6.1" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.6.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.6" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.5_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.5_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.5" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.4_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.4_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.4" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.3_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.3_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.3b" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.3b" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.2_02" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.2_02" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.2_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.2_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.2" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.1_02" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.1_02" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.1_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.1_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.0.2" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.0.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.0_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.0_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="b1.0" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="b1.0" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.6" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.6" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.5" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.5" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.4_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.4_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.3_04" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.3_04" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.3_02" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.3_02" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.3_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.3_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.3" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.3" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.2b" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.2b" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.2a" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.2a" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.1_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.1_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.1" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.0_02" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.0_02" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.0_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.0_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.2.0" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.2.0" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.1.2_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.1.2_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.1.2" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.1.2" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.1.0" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.1.0" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.0.17_04" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.0.17_04" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.0.17_02" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.0.17_02" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.0.16" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.0.16" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.0.15" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.0.15" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.0.14" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.0.14" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.0.11" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.0.11" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.0.5_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.0.5_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="a1.0.4" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="a1.0.4" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="inf-20100618" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="inf-20100618" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="c0.31_20100130" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="c0.31_20100130" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="c0.30_01c" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="c0.30_01c" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="c0.30_生存测试" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="c0.30_生存测试" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="c0.0.23a_01" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="c0.0.23a_01" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="c0.0.22a_05" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="c0.0.22a_05" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="c0.0.13a" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="c0.0.13a" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="c0.0.14a_08" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="c0.0.14a_08" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="c0.0.13a_03" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="c0.0.13a_03" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="c0.0.11a" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="c0.0.11a" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="rd-161348" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="rd-161348" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="rd-160052" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="rd-160052" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="rd-20090515" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="rd-20090515" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="rd-132328" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="rd-132328" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Cobblestone.png"
+            Title="rd-132211" Info="最低Java要求：Java 5" EventType="启动游戏" EventData="rd-132211" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="26w14a" Info="2026 | 最低Java要求：Java 25" EventType="启动游戏" EventData="26w14a" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="25w14craftmine" Info="2025 | 最低Java要求：Java 21 且操作系统为64位" EventType="启动游戏" EventData="25w14craftmine" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="24w14potato" Info="2024 | 最低Java要求：Java 17" EventType="启动游戏" EventData="24w14potato" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="23w13a_or_b" Info="2023 | 最低Java要求：Java 17" EventType="启动游戏" EventData="23w13a_or_b" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="22w13oneBlockAtATime" Info="2022 | 最低Java要求：Java 17" EventType="启动游戏" EventData="22w13oneBlockAtATime" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="20w14∞" Info="2020 | 最低Java要求：Java 8" EventType="启动游戏" EventData="20w14∞" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="3D Shareware v1.34" Info="2019 | 最低Java要求：Java 8" EventType="启动游戏" EventData="3D Shareware v1.34" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="1.RV-Pre1" Info="2016 | 最低Java要求：Java 8" EventType="启动游戏" EventData="1.RV-Pre1" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="15w14a" Info="2015 | 最低Java要求：Java 7" EventType="启动游戏" EventData="15w14a" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="2.0" Info="2013 | 最低Java要求：Java 6" EventType="启动游戏" EventData="2.0" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="其它功能（Other Functions）" Margin="0,0,0,15" CanSwap="True" IsSwapped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+            Title="清理游戏垃圾" Info="清理游戏日志，错误报告和缓存等文件" EventType="清理垃圾" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/GoldBlock.png"
+            Title="今日人品" Info="看一下今天运气值是多少呢？" EventType="今日人品" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Anvil.png"
+            Title="内存优化" Info="如果觉得卡顿不妨点击此按钮（勿使用机械硬盘进行内存优化）" EventType="内存优化" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/Egg.png"
+            Title="导入整合包" Info="点击导入你下载的整合包" EventType="导入整合包" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/NeoForge.png"
+            Title="检查启动器更新" Info="点击检查PCL启动器的更新" EventType="检查更新" Type="Clickable" />
+        <local:MyListItem Margin="-5,0,-5,8"
+            Logo="pack://application:,,,/images/Blocks/RedstoneBlock.png"
+            Title="刷新主页" Info="点击刷新快捷主页" EventType="刷新主页" Type="Clickable" />
+    </StackPanel>
+</local:MyCard>
