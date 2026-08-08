@@ -1,2 +1,4 @@
-# Website
-Open website (original website address: computer.hkfree.work)
+# 网站代码托管仓库
+🌐 网站代码托管 专用仓库
+🚫 严禁私自修改
+✅ 仅限仓库负责人操作
